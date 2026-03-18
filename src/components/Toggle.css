@@ -1,0 +1,58 @@
+.toggle {
+  background: #fff;
+  border: 1px solid #e8e8ef;
+  border-radius: 14px;
+  padding: 2rem;
+  max-width: 480px;
+}
+
+.toggle-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #667eea;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+}
+
+.toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+.toggle-btn:active {
+  transform: translateY(0);
+}
+
+.toggle-btn.active {
+  background: #764ba2;
+}
+
+.toggle-content {
+  margin-top: 1.2rem;
+  padding: 1.2rem;
+  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+  border-radius: 10px;
+  animation: fadeSlideIn 0.3s ease;
+}
+
+.toggle-content p {
+  margin: 0;
+  color: #4a4a6a;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

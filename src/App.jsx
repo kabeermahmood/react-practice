@@ -2,6 +2,10 @@ import Header from './components/Header'
 import Card from './components/Card'
 import Button from './components/Button'
 import UserProfile from './components/UserProfile'
+import Counter from './components/Counter'
+import Toggle from './components/Toggle'
+import ColorPicker from './components/ColorPicker'
+import SimpleForm from './components/SimpleForm'
 import './App.css'
 
 function App() {
@@ -54,6 +58,26 @@ function App() {
             role="Manager"
           />
         </div>
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">🔢 Counter</h2>
+        <Counter />
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">👁️ Toggle</h2>
+        <Toggle />
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">🎨 Color Picker</h2>
+        <ColorPicker />
+      </section>
+
+      <section className="section">
+        <h2 className="section-title">📝 Simple Form</h2>
+        <SimpleForm />
       </section>
     </div>
   )
